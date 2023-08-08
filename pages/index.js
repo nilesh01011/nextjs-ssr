@@ -55,7 +55,7 @@ export default function Home({ products }) {
 export const getServerSideProps = async (context) => {
 
   // api call with SSR product limit of 12
-  const response = await fetch('https://dummyjson.com/products?limit=24');
+  const response = await fetch(process.env.NEXT_PUBLIC_APIS);
   const data = await response.json();
   const products = data.products;
 
