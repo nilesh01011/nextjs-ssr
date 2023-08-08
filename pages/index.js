@@ -1,9 +1,6 @@
 import CommonHeadTag from '@/components/CommonHeadTag';
-import { Inter } from 'next/font/google'
 import Image from 'next/image';
 import { useState } from 'react';
-
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home({ products }) {
 
