@@ -22,7 +22,7 @@ export default function Home({ products }) {
         {/* products */}
         {
           showApi === true &&
-          <div className='w-full h-full grid grid-cols-4 gap-[20px]'>
+          <div className='w-full h-full grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-[20px]'>
             {
               products?.map((ele) => {
                 const { id, title, thumbnail, price } = ele;
